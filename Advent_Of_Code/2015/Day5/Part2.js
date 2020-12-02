@@ -5,6 +5,6 @@ function nice(input) {
 
   // (..).*?\1/ -> any two characters who repeats
   //  (.).\1 -> letter which repeats with exactly one letter between them
-  
+
   return array_with_strings.length;
 }

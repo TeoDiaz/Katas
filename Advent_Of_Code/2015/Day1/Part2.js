@@ -9,7 +9,7 @@ function move(input){
     if(floor_input == true) count++
     if(floor == -1) floor_input = false
   })
-  return result
+  return count
 }
 
 // 1795
