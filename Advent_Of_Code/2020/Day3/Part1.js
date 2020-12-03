@@ -37,5 +37,3 @@ function check(input) {
 
   return trees;
 }
-
-
