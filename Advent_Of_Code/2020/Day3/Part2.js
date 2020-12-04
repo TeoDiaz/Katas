@@ -26,3 +26,5 @@ function multiply(input) {
 
   return first * second * third * fourth * fith;
 }
+
+// 1206576000
