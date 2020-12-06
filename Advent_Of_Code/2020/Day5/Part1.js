@@ -98,9 +98,9 @@ const part1 = (input) => {
     });
   });
 
-  let high = finalSeat.map((ele) => {
+  let ids = finalSeat.map((ele) => {
     return ele[0] * 8 + ele[1];
   });
 
-  return high.sort((a, b) => a - b).pop();
+  return ids.sort((a, b) => a - b).pop();
 };
