@@ -18,7 +18,7 @@ function check(input) {
     notDuplicate = [...newSet].join("");
 
     total += notDuplicate.length;
-  });
+  }); 
 
   return total;
 }
