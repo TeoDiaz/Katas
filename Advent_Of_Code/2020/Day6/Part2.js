@@ -1,26 +1,23 @@
+// LOST MY SOLUTION :facepalm:
+
+// Refactor using intersect
+
 function check(input) {
-  let valueObj = {};
-  let num = 1;
-  let map = input.split("\n");
-  let total = 0;
+  const groups = input.split("\n\n");
 
-  for (let i = 0; i < map.length; i++) {
-    valueObj[num] = (valueObj[num] || "") + " " + map[i];
+  const intersect = (l, r) => new Set([...l].filter((v) => r.has(v)));
 
-    if (map[i] == "") {
-      num++;
-    }
-  }
+  Array.prototype.sumSizes = function () {
+    return this.reduce((s, v) => s + v.size, 0);
+  };
 
-  Object.values(valueObj).map((ele) => {
-    let notDuplicate = ele.split("");
-    let newSet = new Set(notDuplicate);
-    notDuplicate = [...newSet].join("");
-
-    total += notDuplicate.length;
-  }); 
-
-  
-
-  return total;
+return groups
+    .map((g) =>
+      g
+        .trim()
+        .split("\n")
+        .map((x) => new Set(x))
+        .reduce(intersect)
+    )
+    .sumSizes();
 }

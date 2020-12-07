@@ -18,7 +18,19 @@ function check(input) {
     notDuplicate = [...newSet].join("");
 
     total += notDuplicate.length;
-  }); 
+  });
 
   return total;
+}
+
+// Refactor
+
+function check(input) {
+  const groups = input.split("\n\n");
+
+  Array.prototype.sumSizes = function () {
+    return this.reduce((acc, v) => acc + v.size, 0);
+  };
+
+  groups.map((g) => new Set(g.trim().split(/\s?/))).sumSizes();
 }
