@@ -37,34 +37,32 @@ function eliminateDuplicates(arr) {
   return Object.keys(obj);
 }
 
-
 // 2565
 
-// With better code 
-
+// With better code
 
 function moves(input) {
-  let x = 0
-  let y = 0
-  let houses = {}
+  let x = 0;
+  let y = 0;
+  let houses = {};
 
-  input.split("").map(ele => {
+  input.split("").map((ele) => {
     switch (ele) {
-      case '^':
-        y++
+      case "^":
+        y++;
         break;
-      case 'v':
-        y--
+      case "v":
+        y--;
         break;
-      case '>':
-        x++
+      case ">":
+        x++;
         break;
-      case '<':
-        x--
+      case "<":
+        x--;
         break;
     }
-    houses[[x, y]] = true
-  })
+    houses[[x, y]] = true;
+  });
 
-  return Object.keys(houses).length
+  return Object.keys(houses).length;
 }
