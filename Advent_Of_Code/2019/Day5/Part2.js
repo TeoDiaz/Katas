@@ -1,6 +1,8 @@
 function program(codes, inputs) {
   const str = codes.split(`,`).map((n) => parseInt(n));
+
   let stop = false;
+  
   for (i = 0; i < str.length && !stop; ) {
     const instructions = str.slice(i, i + 4);
     const code = instructions[0] % 100;
