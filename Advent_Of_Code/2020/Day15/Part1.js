@@ -1,6 +1,7 @@
 const goA = (input) => {
   let ar = [];
   input.split(",").forEach((ele) => ar.push(Number(ele)));
+  
   let turn = ar.length;
   let num = ar.length;
 
