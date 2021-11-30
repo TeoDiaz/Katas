@@ -5,7 +5,6 @@ const input = fs
   .split("\t")
   .join(" ");
 
-
 let results = [input];
 let runs = 0;
 
