@@ -10,7 +10,6 @@ let increase = 0;
 let depth = 3;
 
 for (let i = depth; i < lines.length; i++) {
-  console.log(i, lines[i-depth], lines[i]);
   if (lines[i - depth] < lines[i]) increase++;
 }
 
