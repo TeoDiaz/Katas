@@ -10,11 +10,9 @@ next_sum = 0
 
 for indx, val in enumerate(list_nums):
     if(indx < len(list_nums) - 3):
-        past_sum = list_nums[indx] + list_nums[indx+1] + list_nums[indx + 2]
-        next_sum = list_nums[indx + 1] + \
-            list_nums[indx+2] + list_nums[indx + 3]
+        past_sum = val + list_nums[indx+1] + list_nums[indx + 2]
+        next_sum = list_nums[indx + 1] + list_nums[indx+2] + list_nums[indx + 3]
         if(past_sum < next_sum):
             increase += 1
-
 
 print(increase)
