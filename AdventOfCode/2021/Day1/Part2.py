@@ -3,7 +3,6 @@ f = open("day1.txt", "r")
 list = f.read()
 list_nums = map(int, list.split("\n"))
 
-
 increase = 0
 past_sum = 0
 next_sum = 0
