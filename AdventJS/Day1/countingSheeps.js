@@ -14,6 +14,8 @@ function contarOvejas(ovejas) {
   return ovejasFiltradas;
 }
 
+// Example
+
 const ovejas = [
   { name: "Noa", color: "azul" },
   { name: "Euge", color: "rojo" },

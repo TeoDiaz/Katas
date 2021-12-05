@@ -13,6 +13,8 @@ function isValid(letter) {
   return false;
 }
 
+// Examples
+
 // "bici coche (balón) bici coche peluche" // -> ✅
 // "(muñeca) consola bici" // ✅
 

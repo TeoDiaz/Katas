@@ -12,6 +12,8 @@ function listGifts(letter) {
   return obj;
 }
 
+// Example 
+
 const carta = "bici coche balón _playstation bici coche peluche";
 
 const regalos = listGifts(carta);

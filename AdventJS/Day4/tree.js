@@ -20,6 +20,8 @@ function createXmasTree(height) {
   return tree.join("\n");
 }
 
+// Example
+
 console.log(createXmasTree(5));
 
 // ____*____
