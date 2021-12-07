@@ -1,4 +1,4 @@
-console.time('Part2')
+console.time("Part2");
 
 const fs = require("fs");
 
@@ -11,11 +11,13 @@ const input = fs
 let max = Math.max(...input);
 let aligns = [];
 
+console.time("Brute force");
 for (let i = 1; i < max; i++) {
   aligns.push(
     input.reduce((count, crab) => count + fuelCost(Math.abs(crab - i)), 0)
   );
 }
+console.timeEnd("Brute force"); // 1460.150ms Not bad!
 
 function fuelCost(dist) {
   let cost = 0;
@@ -26,6 +28,20 @@ function fuelCost(dist) {
 
   return cost;
 }
-console.timeEnd('Part2') // 1474.399ms Not bad! 
+
+console.time("Gauss");
+for (let i = 1; i < max; i++) {
+  aligns.push(
+    input.reduce(
+      (count, crab) => count + fuelCostByGauss(Math.abs(crab - i)),
+      0
+    )
+  );
+}
+console.timeEnd("Gauss"); // 27.784ms Better!
+
+function fuelCostByGauss(dist) {
+  return (dist * (dist + 1)) / 2;
+}
 
 console.log(Math.min(...aligns));
