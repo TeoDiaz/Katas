@@ -20,10 +20,10 @@ const produceFish = (lanterns, days) => {
 
   while (day < days) {
     let resetIndex = 6;
-    let resetFish = lanterns.shift();
+    let resetFishCount = lanterns.shift();
 
-    lanterns[resetIndex] += resetFish;
-    lanterns.push(resetFish);
+    lanterns[resetIndex] += resetFishCount;
+    lanterns.push(resetFishCount);
 
     day++;
   }
