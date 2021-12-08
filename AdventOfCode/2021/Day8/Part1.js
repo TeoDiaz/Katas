@@ -27,4 +27,8 @@ lines.forEach((x) => {
   });
 });
 
-console.log(codes);
+let sum = 0
+for (const [key, value] of Object.entries(codes)) {
+  sum += value
+}
+console.log(sum);
