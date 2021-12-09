@@ -37,7 +37,8 @@ Your puzzle answer was 3460311188.
 
 The first half of this puzzle is complete! It provides one gold star: *
 
---- Part Two ---
+##  Part Two
+
 You now have a complete Intcode computer.
 
 Finally, you can lock on to the Ceres distress signal! You just need to boost your sensors using the BOOST program.
