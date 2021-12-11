@@ -54,7 +54,7 @@ while (steps < 500) {
       addOneAdjacents(x, y);
     }
   }
-  
+
   let zeroMatrix = 0;
 
   for (let z = 0; z < matrix.length; z++) {
