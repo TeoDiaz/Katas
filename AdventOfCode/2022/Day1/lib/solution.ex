@@ -14,7 +14,9 @@ defmodule Solution do
   end
 
   defp sum_calories(input) do
-    Enum.map(input, fn x ->
+    input
+    |> String.split("\n\n")
+    |> Enum.map(fn x ->
       String.split(x, "\n", trim: true) |> Enum.map(&String.to_integer/1) |> Enum.sum()
     end)
   end

@@ -39,11 +39,9 @@ defmodule SolutionTest do
 
     10000
     """
-    |> String.split("\n\n")
   end
 
   defp input() do
     File.read!("day1.txt")
-    |> String.split("\n\n")
   end
 end
