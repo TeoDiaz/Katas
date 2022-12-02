@@ -3,23 +3,30 @@ defmodule SolutionTest do
   doctest Solution
 
   test "part 1 with example" do
-    assert Solution.part1(example()) == "" # Example Solution
+    # Example Solution
+    assert Solution.part1(example()) == 15
   end
 
   test "part 1 with input data" do
-    assert Solution.part1(input()) == "" # Solution
+    # Solution
+    assert Solution.part1(input()) == 10310
   end
 
   test "part 2 with example" do
-    assert Solution.part2(example()) == "" # Example Solution
+    # Example Solution
+    assert Solution.part2(example()) == 12
   end
 
   test "part 2 with input data" do
-    assert Solution.part2(input()) == "" # Solution
+    # Solution
+    assert Solution.part2(input()) == 14859
   end
 
   defp example() do
     """
+    A Y
+    B X
+    C Z
     """
     |> String.split("\n", trim: true)
   end
