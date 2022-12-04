@@ -43,14 +43,7 @@ console.log("Part1 -> " + part1());
 
 count = 0;
 function checkPart2(from1, to1, from2, to2) {
-  if (
-    (from1 >= from2 && from1 <= to2) ||
-    (to1 >= from2 && to1 <= to2) ||
-    (from2 >= to1 && from2 <= to1) ||
-    (to2 >= from1 && to2 <= to1)
-  ) {
-    count++;
-  }
+  if (from1 <= to2 && from2 <= to1) count++;
 }
 
 function part2() {
