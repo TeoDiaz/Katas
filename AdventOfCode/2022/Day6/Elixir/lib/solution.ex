@@ -1,0 +1,1 @@
+defmodule Solution, do: def solution(input, length), do: input |> String.split("", trim: true) |> Enum.chunk_every(length, 1) |> Enum.find_index(fn chunk -> length == length(Enum.uniq(chunk)) end) |> Kernel.+(length)
