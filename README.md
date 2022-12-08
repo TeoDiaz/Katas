@@ -8,3 +8,7 @@ I usually do katas from:
 ## But also have katas from
 - Cabify CP Contest
 - [AdventJS](https://adventjs.dev/)
+
+<div align="center">
+  <img src="images/logo.png" height=400px width=600px</img>
+</div>
