@@ -20,18 +20,17 @@ const fields = lines.map((ele) => {
   return groups;
 });
 
-let count = 0;
 function checkPart1(from1, to1, from2, to2) {
-  if ((from1 >= from2 && to1 <= to2) || (from2 >= from1 && to2 <= to1)) {
-    count++;
-  }
+  return (from1 >= from2 && to1 <= to2) || (from2 >= from1 && to2 <= to1);
 }
 
 function part1() {
+  let count = 0;
+
   fields.forEach((field) => {
     let { from1, to1, from2, to2 } = field;
 
-    checkPart1(from1, to1, from2, to2);
+    if (checkPart1(from1, to1, from2, to2)) count++;
   });
 
   return count;
@@ -41,16 +40,17 @@ console.log("Part1 -> " + part1());
 
 // Part 2
 
-count = 0;
 function checkPart2(from1, to1, from2, to2) {
-  if (from1 <= to2 && from2 <= to1) count++;
+  return from1 <= to2 && from2 <= to1;
 }
 
 function part2() {
+  let count = 0;
+
   fields.forEach((field) => {
     let { from1, to1, from2, to2 } = field;
 
-    checkPart2(from1, to1, from2, to2);
+    if (checkPart2(from1, to1, from2, to2)) count++;
   });
 
   return count;
