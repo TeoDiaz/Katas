@@ -1,4 +1,4 @@
-defmodule Day18.MixProject do
+defmodule Day1.MixProject do
   use Mix.Project
 
   def project do
