@@ -19,7 +19,7 @@ defmodule SolutionTest do
 
   test "part 2 with input data" do
     # Solution
-    assert Solution.part2(input()) == ""
+    assert Solution.part2(input()) == 1923
   end
 
   defp example() do
